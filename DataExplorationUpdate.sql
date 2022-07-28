@@ -57,7 +57,7 @@ GROUP BY location
 Order By TotalDeathCount desc;
 
 --GlobalNumbers---
---How to deal with the Null value under New_cases during calculations
+
 
 Select date, SUM(new_cases), SUM(Cast(new_deaths As int)) ,   SUM(Cast(new_deaths AS float))/ Sum(New_cases)* 100 As DeathPercentage
 From CovidDeaths
